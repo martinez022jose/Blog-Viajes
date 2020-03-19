@@ -231,7 +231,7 @@ section .cajaExtra{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	background: #333;
+	background: black;
 	color: #fff;
 }
 
@@ -273,20 +273,44 @@ section .cajaExtra .cajaItems .item .cajaImagen img{
 section .cajaPersonas{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
 }
-section .cajaPersonas .cajaExperiencias{
-	margin: auto;
-	width: 50%;
-}
-section .cajaPersonas .cajaExperiencias .experiencia{
-	display: block;
-	width: 600px;
-	height: 400px;
-}
-section .cajaPersonas .cajaExperiencias .experiencia img{
-	width: 100%;
-	height: 100%;
 
+section .cajaPersonas h4{
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+section .cajaPersonas .cajaExperiencias{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+section .cajaPersonas .cajaExperiencias .item{
+	display: flex;
+
+}
+section .cajaPersonas .cajaExperiencias .item .cajaImagen{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	padding:10px;
+}
+
+section .cajaPersonas .cajaExperiencias .item p{
+	width: 60%;
+	padding: 30px;
+	font-size: 30px;
+	color: grey;
+}
+section .cajaPersonas .cajaExperiencias .item img{
+    width: 100%;
+    border-radius: 50%;
 }
 /*Trabajamos sobre el foooter*/
 
