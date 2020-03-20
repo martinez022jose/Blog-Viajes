@@ -25,8 +25,6 @@ header{
 	top:0px;
 	left: 0px;
 	z-index: 100;
-	
-	
 }
 
 header .contenedor{
@@ -48,8 +46,6 @@ header .contenedor label{
 	font-size: 30px;
 	padding: 20px;
 	cursor: pointer;
-
-
 }
 
 header .contenedor .menu{
@@ -216,8 +212,6 @@ section .cajaGaleria .cajaItems .item .cajaImagen .continente{
 section .cajaGaleria .cajaItems .item .cajaImagen:hover .continente{
     transform: translateY(100%);
     display: none;
-
-    
 }
 
 section .cajaGaleria .cajaItems .item p{
@@ -331,6 +325,7 @@ section .cajaPersonas .cajaExperiencias .item img{
     width: 100%;
     border-radius: 50%;
 }
+
 /*Trabajamos sobre el foooter*/
 
 footer{
@@ -362,6 +357,7 @@ footer .cajaInfo .cajaIconos a{
 	color:black;
 	padding: 20px;
 }
+
 /*Trabajamos sobre la seccion "imagen unica"*/
 
 section .cajaImagenUnica .imagenUnica img{
@@ -399,7 +395,8 @@ section .imagenUnicaActivada{
 	display: flex;
 	
 }
-/*Trabajamos sobre los "media queris"*/
+
+/*Trabajamos sobre el "responsive design*/
 @media(min-width:1280px){
     header .contenedor .menu{
 		position: absolute;
@@ -438,6 +435,7 @@ section .imagenUnicaActivada{
     header .contenedor .menu a{
     	border: none;
     }
+
 	header .contenedor label{
 		display: none;
 	}
@@ -477,7 +475,7 @@ section .imagenUnicaActivada{
 }
 @media(min-width:768px) and (max-width: 1024px){
 	section .cajaPortada .descripcion{
-		padding-left:410px;
+		padding-left:430px;
 	}
     section .cajaGaleria .cajaItems .item{
         width: 50%;
@@ -521,6 +519,8 @@ section .imagenUnicaActivada{
 
 	section .cajaPortada .descripcion a{
 		font-size: 13px;
+		width: 100px;
+		height: 20px;
 	}
 
 	section .cajaGaleria .cajaItems .item{
@@ -553,8 +553,6 @@ section .imagenUnicaActivada{
 	}
 		
 }
-
-
 @media(max-width:480px){
 	section .cajaPortada .descripcion{
 		padding-left:215px;
@@ -573,12 +571,9 @@ section .imagenUnicaActivada{
 		width: 60px;
 		height: 30px;
 		text-align: center;
-
-
 	}
 
-
-	section .cajaGaleria .cajaItems .item{
+    section .cajaGaleria .cajaItems .item{
         width: 70%;
         margin:auto;
 	}
@@ -586,9 +581,8 @@ section .imagenUnicaActivada{
     section .cajaGaleria .cajaItems{
 		display:flex;
 		margin:auto;
-		
-		
 	}
+
 	section .cajaExtra .cajaItems .item{
 		display:flex;
 		width: 70%;
@@ -605,6 +599,50 @@ section .imagenUnicaActivada{
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+
+	section .cajaPersonas .cajaExperiencias .item{
+		display:block;
+		width: 100%;
+	}
+	
+	section .cajaPersonas .cajaExperiencias{
+		margin:auto;
+		display: flex;
+    }
+
+	footer .cajaInfo .cajaIconos{
+		display: flex;
+		flex-direction: column;
+	}
    
 
+}
+@media(max-width:340px){
+	section .cajaPortada .descripcion{
+		padding-left:150px;
+	}
+
+	section .cajaPortada .descripcion h2{
+		font-size: 12px;
+	}
+
+	section .cajaPortada .descripcion p{
+		font-size: 10px;
+	}
+
+	section .cajaPortada .descripcion a{
+		font-size: 5px;
+		width: 50px;
+		height: 20px;
+		text-align: center;
+	}
+
+	header .contenedor h1{
+		font-size: 25px;
+	}
+
+	footer .cajaInfo .cajaIconos{
+		display: flex;
+		flex-direction: column;
+	}
 }

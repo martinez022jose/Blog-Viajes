@@ -1,7 +1,6 @@
 (()=>{
 
-
-	var imagenesDestacadas = document.querySelectorAll('section .cajaGaleria .cajaItems .item .cajaImagen img');
+  var imagenesDestacadas = document.querySelectorAll('section .cajaGaleria .cajaItems .item .cajaImagen img');
   var imagenesDeInteres = document.querySelectorAll('section .cajaExtra .cajaItems .item .cajaImagen img');
     //Falta corregir-Repeticion de codigo
     //var totalImagenes = imagenesDestacadas.concat(imagenesDeInteres);
