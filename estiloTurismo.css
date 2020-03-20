@@ -21,10 +21,12 @@ header{
 	height: 60px;
 	background: #333;
 	color:#fff;
-	position: fixed;
+	position:absolute;
 	top:0px;
 	left: 0px;
-	z-index: 1;
+	z-index: 100;
+	
+	
 }
 
 header .contenedor{
@@ -54,11 +56,11 @@ header .contenedor .menu{
 	position: absolute;
 	top:60px;
 	left: 0px;
-	height: 100vh;
 	width: 100%;
 	background: rgba(0,0,0,0.7);
 	transition: all 0.5s;
 	transform: translateX(-100%);
+	z-index: 110;
 }
 
 header .contenedor .menu a{
@@ -68,6 +70,7 @@ header .contenedor .menu a{
 	text-decoration: none;
 	padding:20px;
 	border-bottom: 2px solid rgba(0,0,0,0.8);
+	z-index: 101;
 }
 
 header .contenedor .menu a:hover{
@@ -86,12 +89,13 @@ section{
 
 section .cajaPortada{
 	position: relative;
-
+    
 }
 
 section .cajaPortada img{
 	width: 100%;
 	height: 100%;
+
 }
 
 section .cajaPortada .descripcion{
@@ -111,6 +115,7 @@ section .cajaPortada .descripcion{
 section .cajaPortada .descripcion h2{
 	font-size: 40px;
 	color:black;
+	margin-top: 20px;
 }
 section .cajaPortada .descripcion p{
 	font-size: 30px;
@@ -128,11 +133,16 @@ section .cajaPortada .descripcion a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 101;
+	
+	
+
 }
 
 section .cajaPortada .descripcion a:hover{
-	background:rgba(0,0,0,0.2);
-}
+	background:rgba(0,0,0,0.6);
+	
+ }
 
 /*Trabajamos sobre la section de "Introduccion"*/
 
@@ -195,16 +205,24 @@ section .cajaGaleria .cajaItems .item .cajaImagen .continente{
 	align-items: center;
 	background: rgba(0,0,0,0.6);
 	color:#fff;
-	font-size: 30px;
+	font-size:30px;
     
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen .desactivoContinente{
-    display: none;
+.continenteDesactivado{
+	display: none;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen p{
-	font-size: 20px;
+section .cajaGaleria .cajaItems .item .cajaImagen:hover .continente{
+    transform: translateY(100%);
+    display: none;
+
+    
+}
+
+section .cajaGaleria .cajaItems .item p{
+	font-size: 25px;
+	height: 200px;
 }
 
 section .cajaGaleria .cajaItems .item .cajaImagen{
@@ -212,14 +230,9 @@ section .cajaGaleria .cajaItems .item .cajaImagen{
 	width: 300px;
 	height: 200px;
 	position: relative;
-
+	z-index: 101;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen:hover .continente{
-    transform: translateY(100%);
-    display: none;
-    transition: all 20s ease-out;
-}
 section .cajaGaleria .cajaItems .item .cajaImagen img{
 	width: 100%;
 	height: 100%;
@@ -255,6 +268,12 @@ section .cajaExtra .cajaItems .item{
 	justify-content: center;
 	align-items: center;
 	padding: 40px;
+	z-index: 101;
+}
+
+section .cajaExtra .cajaItems .item p{
+	font-size: 25px;
+	height: 200px;
 }
 section .cajaExtra .cajaItems .item .cajaImagen{
 	width: 300px;
@@ -373,7 +392,7 @@ section .cajaImagenUnica{
 	bottom:0px;
 	right: 0px;
     align-items: center;
-    z-index: 2;
+    z-index: 102;
 }
 
 section .imagenUnicaActivada{
@@ -404,7 +423,6 @@ section .imagenUnicaActivada{
 		display:flex;
 	}
 }
-
 @media(min-width:1024px) and (max-width:1280px){
 	header .contenedor .menu{
 		position: absolute;
@@ -426,6 +444,10 @@ section .imagenUnicaActivada{
 
 	section .cajaExtra .cajaItems{
 		display:flex;
+	}
+
+	section .cajaExtra .cajaItems .item{
+		width: 50%
 	}
     
     section .cajaGaleria .cajaItems .item{
@@ -453,12 +475,17 @@ section .imagenUnicaActivada{
 
 
 }
-
 @media(min-width:768px) and (max-width: 1024px){
+	section .cajaPortada .descripcion{
+		padding-left:410px;
+	}
     section .cajaGaleria .cajaItems .item{
         width: 50%;
 	}
-
+    
+    section .cajaExtra .cajaItems{
+    	display: flex;
+    }
 	section .cajaExtra .cajaItems .item{
 		width: 50%;
 	}
@@ -477,13 +504,41 @@ section .imagenUnicaActivada{
 }
 
 @media(min-width:480px) and (max-width:768px){
-	section .cajaGaleria .cajaItems .item{
-        width: auto;
+	
+	section .cajaPortada .descripcion{
+		padding-left:320px;
+
+	}
+    
+    section .cajaPortada .descripcion h2{
+		font-size: 18px;
+
 	}
 
-	section .cajaExtra .cajaItems .item{
-		width: auto;
+	section .cajaPortada .descripcion p{
+		font-size: 15px;
 	}
+
+	section .cajaPortada .descripcion a{
+		font-size: 13px;
+	}
+
+	section .cajaGaleria .cajaItems .item{
+        width: 70%;
+        margin:auto;
+     
+	}
+    
+    section .cajaGaleria .cajaItems{
+		display:flex;
+		margin:auto;
+		
+		
+	}
+	section .cajaExtra .cajaItems .item{
+		display:flex;
+		width: 70%;
+    }
 
 	section .cajaExtra .cajaItems .item p{
 		padding-left: 100px;
@@ -496,23 +551,48 @@ section .imagenUnicaActivada{
 		padding-left: 50px;
 		padding-right: 50px;
 	}
-	
 		
 }
 
-@media(min-width: 320px) and (max-width:480px){
-   section .cajaGaleria .cajaItems .item{
-        width: auto;	
-   }
 
-   section .cajaGaleria .cajaItems{
-   	    display: flex;
-   	    flex-direction: column;
-   }
-
-	section .cajaExtra .cajaItems{
-		column-count: 1;
+@media(max-width:480px){
+	section .cajaPortada .descripcion{
+		padding-left:215px;
 	}
+
+	section .cajaPortada .descripcion h2{
+		font-size: 15px;
+	}
+
+	section .cajaPortada .descripcion p{
+		font-size: 12px;
+	}
+
+	section .cajaPortada .descripcion a{
+		font-size: 8px;
+		width: 60px;
+		height: 30px;
+		text-align: center;
+
+
+	}
+
+
+	section .cajaGaleria .cajaItems .item{
+        width: 70%;
+        margin:auto;
+	}
+    
+    section .cajaGaleria .cajaItems{
+		display:flex;
+		margin:auto;
+		
+		
+	}
+	section .cajaExtra .cajaItems .item{
+		display:flex;
+		width: 70%;
+    }
 
 	section .cajaExtra .cajaItems .item p{
 		padding-left: 100px;
@@ -525,10 +605,6 @@ section .imagenUnicaActivada{
 		padding-left: 50px;
 		padding-right: 50px;
 	}
-
-	footer .cajaInfo{
-		display: flex;
-		flex-direction: column;
-	}
+   
 
 }
