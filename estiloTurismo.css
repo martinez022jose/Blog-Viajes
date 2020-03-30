@@ -25,6 +25,7 @@ header{
 	top:0px;
 	left: 0px;
 	z-index: 100;
+
 }
 
 header .contenedor{
@@ -230,6 +231,63 @@ section .cajaGaleria .cajaItems .item .cajaImagen{
 section .cajaGaleria .cajaItems .item .cajaImagen img{
 	width: 100%;
 	height: 100%;
+}
+
+/*Trabajamos sobre la seccion de "Galeria"*/
+section .cajaSlider ul li .cajaImagen{
+	width: 33.33%;
+	height: 400px;
+	padding: 5px;
+	border: 1px solid black;
+	margin: 5px;
+	border-radius: 20px;
+}
+
+section .cajaSlider ul li .cajaImagen img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+section .cajaSlider ul li{
+	width: 100%;
+	height: 400px;
+	display: flex;
+
+	
+}
+
+section .cajaSlider ul{
+	width: 100%;
+	height: 400px;
+	list-style: none;
+
+}
+
+section h4{
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+
+section .cajaSlider{
+	width: 100%;
+	position: relative;
+	padding: 30px;
+}
+
+section .cajaSlider #botonDerecho{
+	position: absolute;
+	top: 200px;
+	right: 0px;
+	font-size: 35px;
+}
+
+section .cajaSlider #botonIzquierdo{
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	font-size: 35px;
 }
 
 /*Trabajamos sobre la seccion de "Lugares relacionados"*/
