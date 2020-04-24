@@ -51,7 +51,7 @@
 
     botonDerecho.addEventListener('click',imagenPosterior);
     botonIzquierdo.addEventListener('click',imagenAnterior);
-    setInterval(imagenPosterior,4000);
+    setInterval(imagenPosterior,9000);
 
     function imagenPosterior(){
       if(posImagen >= longitudGaleria){
