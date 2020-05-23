@@ -16,8 +16,8 @@
                     <a href="index.html">Inicio</a>
                     <a href="index.html">Destacados</a>
                     <a href="index.html">Experiencias</a>
-                    <a href="#">Contacto</a>
-                    <a href="login.php">Login</a>
+                    <a href="contacto.html">Contacto</a>
+                   
                 </nav>
         </div>
     </header>
@@ -35,37 +35,32 @@
 				
 			</div>
 			<div id="logoContacto" class="fas fa-address-card"></div>
-		    </div>
+		  </div>
 
 		  <div class="form">
 			<div class="cajaFormulario">
 			
-			<form action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" 
-				class="formulario">
-
-				
-                <?php
-		          include("validacionEnvioMail.php");
-		        ?>
-
+			<form class="formulario" method="POST">
+                <div class="resFormulario">
+                    
+                </div>
                 <div class="item">
 					<label>Nombre/s:</label>
-				    <input class="input" type="text" name="nombre"  placeholder="Ingrese Nombre" value="<?php if(isset($nombre)){ echo $nombre;} ?>">
+				    <input class="input" id="nombre" type="text" name="nombre"  placeholder="Ingrese Nombre">
 				</div>
 				<div class="item">
 					<label>Apellido/s:</label>
-				    <input class="input" type="text" name="apellido"  placeholder="Ingrese Apellido" value="<?php if(isset($apellido)){ echo $apellido;} ?>">
+				    <input class="input" id="apellido" type="text" name="apellido"  placeholder="Ingrese Apellido">
 				</div>
 				<div class="item">
 					<label>Email:</label>
-				    <input class="input" type="text" name="email"  placeholder="Ingrese Mail" value="<?php if(isset($email)){ echo $email;} ?>">
+				    <input class="input" id="email" type="text" name="email"  placeholder="Ingrese Mail">
 				</div>
 				<div class="item">
-					<textarea name="mensaje"  placeholder="Ingrese Texto" 
-					value="<?phpif(isset($mensaje)){ echo $mensaje;} ?>"></textarea>
+					<textarea name="mensaje" id="mensaje" placeholder="Ingrese Texto" ></textarea>
 				</div>
 				<div class="item">
-					<input id="button" type="submit" name="submit"></button>
+					<input id="buttonEnviar" type="button" name="submit" value="Enviar">
 				</div>
 
 			</form>
@@ -87,6 +82,7 @@
             
         </div>
     </footer>
+    <script type="text/javascript" src="ajax.js"></script>
 
 </body>
 </html>
