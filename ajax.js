@@ -9,6 +9,7 @@ var resFormulario = document.querySelector('section .form .cajaFormulario .formu
 botonEnviarFormulario.addEventListener('click',validarEnvioMail);
 
 function validarEnvioMail(){
+    resFormulario.innerHTML = '';
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST","validacionEnvioMail.php",true);
     var informacionTotal = "nombre"+nombre+"&apellido"+apellido+"&email"+email+"&mensaje"+mensaje;
