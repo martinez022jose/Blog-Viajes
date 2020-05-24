@@ -781,8 +781,8 @@ section .cajaContacto .form{
 }
 
  section .cajaContacto .form .cajaFormulario form .item textarea{
- 	min-width: 430px;
- 	max-width: 430px;
+ 	min-width: 500px;
+ 	max-width: 500px;
  	min-height: 80px;
  	max-height: 140px;
  	font-size: 17px;
@@ -792,10 +792,20 @@ section .cajaContacto .form{
  	color:white;
  	width: 500px;
  	background: red;
- 	margin-left: 10px;
+ 	margin-left: 30px;
  	margin-bottom: 7px;
  	height: 30px;
  	padding: 10px;
  	border-radius: 2px;
+ }
+ section .cajaContacto .form .cajaFormulario form .mensajeExitoso{
+	 background:green;
+	 color:white;
+ 	 width: 500px;
+ 	 margin-left: 30px;
+ 	 margin-bottom: 7px;
+ 	 height: 30px;
+ 	 padding: 10px;
+ 	 border-radius: 2px;
  }
 

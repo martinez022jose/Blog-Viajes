@@ -4,7 +4,8 @@
 	<title>Proyecto Viajes</title>
     <script src="https://kit.fontawesome.com/59dceabbec.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="estiloTurismo.css">
+	<link rel="stylesheet" type="text/css" href="estiloTurismo.css">
+	
 </head>
 <body>
 	 <header>
@@ -40,13 +41,13 @@
 		  <div class="form">
 			<div class="cajaFormulario">
 			
-			<form class="formulario" method="POST">
+			<form class="formulario" id="formularioContacto" method="POST" action=""> 
                 <div class="resFormulario">
                     
                 </div>
                 <div class="item">
 					<label>Nombre/s:</label>
-				    <input class="input" id="nombre" type="text" name="nombre"  placeholder="Ingrese Nombre">
+				    <input id="nombre" type="text" name="nombre"  placeholder="Ingrese Nombre">
 				</div>
 				<div class="item">
 					<label>Apellido/s:</label>
@@ -60,7 +61,7 @@
 					<textarea name="mensaje" id="mensaje" placeholder="Ingrese Texto" ></textarea>
 				</div>
 				<div class="item">
-					<input id="buttonEnviar" type="button" name="submit" value="Enviar">
+					<button id="buttonEnviar" type="button" name="submit">Enviar</button>
 				</div>
 
 			</form>
@@ -82,7 +83,7 @@
             
         </div>
     </footer>
-    <script type="text/javascript" src="ajax.js"></script>
-
+    
+	<script type="text/javascript" src="ajax.js"></script>
 </body>
 </html>
