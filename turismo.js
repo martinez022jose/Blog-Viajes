@@ -1,11 +1,12 @@
 
-(()=>{
+
 
     var imagenesDestacadas = document.querySelectorAll('section .cajaGaleria .cajaItems .item .cajaImagen img');
     var imagenesDeInteres = document.querySelectorAll('section .cajaExtra .cajaItems .item .cajaImagen img');
-    var desplazamientoDerecha = document.querySelector('#botonDerecho');
-    var desplazamientoIzquierda = document.querySelector('#botonIzquierda'); 
-    var longitudGaleria = document.querySelectorAll('section .cajaSlider ul li').length;
+    var botonDerecho = document.getElementById('botonDerecho');
+    var botonIzquierdo = document.getElementById('botonIzquierda'); 
+    var longitudGaleria = document.querySelectorAll('section .cajaSlider ul li .cajaImagen');
+    console.log(longitudGaleria);
     var imagenUnica = document.querySelector('section .cajaImagenUnica .imagenUnica img');
     var pantallaNegra= document.querySelector('section .cajaImagenUnica');
     var galeria = document.querySelectorAll('section .cajaSlider ul li .cajaImagen img');
@@ -41,41 +42,11 @@
     });
     };
 
-    //Funcionalidades para la galeria de fotos(Slider)
+ 
 
-    $('section .cajaSlider ul li').hide();
-    $('section .cajaSlider ul li:first').show();
-
-    //Siempre arranca en la priemra posicion
-    var posImagen = 1;
-
-    botonDerecho.addEventListener('click',imagenPosterior);
-    botonIzquierdo.addEventListener('click',imagenAnterior);
-    setInterval(imagenPosterior,9000);
-
-    function imagenPosterior(){
-      if(posImagen >= longitudGaleria){
-        posImagen = 1;
-        $('section .cajaSlider ul li').hide();
-        $('section .cajaSlider ul li:nth-child('+posImagen+')').fadeIn();
-      }else{
-        posImagen++;
-        $('section .cajaSlider ul li').hide();
-        $('section .cajaSlider ul li:nth-child('+posImagen+')').fadeIn();
-    }};
-         
-    function imagenAnterior(){
-      if(posImagen <= 1){
-        posImagen = 3;
-        $('section .cajaSlider ul li').hide();
-        $('section .cajaSlider ul li:nth-child('+posImagen+')').fadeIn();
-      }else{
-        posImagen--;
-        $('section .cajaSlider ul li').hide();
-        $('section .cajaSlider ul li:nth-child('+posImagen+')').fadeIn();
-    }};
-
+  
     
-})();
 
 
+
+   
