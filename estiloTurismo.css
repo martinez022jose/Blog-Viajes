@@ -480,6 +480,14 @@ section .imagenUnicaActivada{
 	section .cajaExtra .cajaItems{
 		display:flex;
 	}
+
+	section .cajaContacto .form .cajaFormulario form .item{
+		width: 450px;
+	}
+
+	
+
+
 }
 @media(min-width:1024px) and (max-width:1280px){
 	header .contenedor .menu{
@@ -532,6 +540,14 @@ section .imagenUnicaActivada{
 		font-size: 40px;
 	}
 
+	section .cajaContacto .form .cajaFormulario form .item input{
+		width: 300px;
+	}
+
+	section .cajaContacto .form .cajaFormulario form .item textarea{
+		width: 300px;
+	}
+
 
 }
 @media(min-width:768px) and (max-width: 1024px){
@@ -559,6 +575,10 @@ section .imagenUnicaActivada{
 		font-size: 25px;
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+
+	section .cajaContacto .form .cajaFormulario form .item textarea{
+		width: 300px;
 	}
 }
 
@@ -612,6 +632,15 @@ section .imagenUnicaActivada{
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+
+	section .cajaContacto .form .cajaFormulario form .item input{
+		width: 200px;
+	}
+
+	section .cajaContacto .form .cajaFormulario form .item textarea{
+		width: 200px;
+	}
+
 		
 }
 @media(max-width:480px){
@@ -675,6 +704,15 @@ section .imagenUnicaActivada{
 		display: flex;
 		flex-direction: column;
 	}
+
+	section .cajaContacto .form .cajaFormulario form .item input{
+		width: 100px;
+	}
+
+	section .cajaContacto .form .cajaFormulario form .item textarea{
+		width: 100px;
+	}
+
    
 
 }
@@ -706,6 +744,15 @@ section .imagenUnicaActivada{
 		display: flex;
 		flex-direction: column;
 	}
+
+	section .cajaContacto .form .cajaFormulario form .item input{
+		width: 100px;
+	}
+
+	section .cajaContacto .form .cajaFormulario form .item textarea{
+		width: 100px;
+	}
+
 }
 
 /*Trabajamos sobre el contacto.html*/
@@ -755,9 +802,10 @@ section .cajaContacto .form{
 	border-radius: 0px 50px 50px 0px;
 	padding-top: 30px;
 }
- section .cajaContacto .form .cajaFormulario form .item{
+
+section .cajaContacto .form .cajaFormulario form .item{
  	margin-bottom: 20px;
- 	margin-left: 30px;
+ 	margin-left: 20px;
  	display: flex;
  	flex-direction: column;
  	width: 500px;
