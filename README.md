@@ -1,12 +1,15 @@
-# Blog Viajes
+# Blog Viajes :airplane:
 
 ## Objetivo :dart:
-Poder diseñar una pagina web, tanto Backend como Frontend. Se busca desarrollarlo con HTML5, CSS3, JavaScript y PHP. Ademas de utilizar la tecnica de desarrollo web Ajax
+Poder diseñar una pagina web, tanto desarrollo Backend como Frontend. Se buscara implementar unicamente **HTML5**, **CSS3**, **JavaScript** y **PHP**. Ademas de utilizar tecnicas como **Ajax** y **Responsive Design**. Ajax, tecnica de desarrollo web, para mejorar la interaccion con el cliente y Responsive Design, tecnica utilizada de forma recurrente en la actualmente, con el objetivo de que nuestra pagina web sea adaptable a cualquier dispositivo(Se trabajara con medidas estandar)
 
 ## Modelado :memo:
-> Modelado: 
+> Pagina Principal:
 
 <img height="1800px" width="700px" src="https://github.com/martinez022jose/Blog-Viajes/blob/master/screenShotsReadMe/index.png"/>
+
+> Pagina Contacto:
+
 <img height="1000px" width="1500px" src="https://github.com/martinez022jose/Blog-Viajes/blob/master/screenShotsReadMe/contacto.png"/>
 
 ## Autor/Autores :pushpin:
