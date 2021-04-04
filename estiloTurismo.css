@@ -245,7 +245,7 @@ section .cajaSlider ul li .cajaImagen{
 
 section .cajaSlider ul li .cajaImagen img{
 	width: 100%;
-	height: 100%;
+	height: 20rem;
 	border-radius: 20px;
 }
 
@@ -363,6 +363,7 @@ section .cajaPersonas .cajaExperiencias{
 	margin: auto;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 section .cajaPersonas .cajaExperiencias .item{
@@ -372,7 +373,7 @@ section .cajaPersonas .cajaExperiencias .item{
 section .cajaPersonas .cajaExperiencias .item .cajaImagen{
 	display: flex;
 	width: 200px;
-	height: 200px;
+	height: 15rem;
 	padding:10px;
 }
 
@@ -694,10 +695,13 @@ section .imagenUnicaActivada{
 		display:block;
 		width: 100%;
 	}
-	
+
 	section .cajaPersonas .cajaExperiencias{
 		margin:auto;
 		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
     }
 
 	footer .cajaInfo .cajaIconos{
