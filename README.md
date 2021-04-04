@@ -6,7 +6,7 @@ Poder diseñar una pagina web, tanto desarrollo Backend como Frontend. Se buscar
 ## Modelado :memo:
 > Pagina Principal:
 
-<img height="1800px" width="900px" src="https://github.com/martinez022jose/Blog-Viajes/blob/master/screenShotsReadMe/index.png"/>
+<img height="1800px" width="900px" src="https://github.com/martinez022jose/Blog-Viajes/tree/master/public/Imagenes/index.png"/>
 
 ## Autor/Autores :pushpin:
 * **Jose Martinez Gutierrez**
