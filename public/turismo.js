@@ -1,7 +1,7 @@
 
 
 
-    var imagenesDestacadas = document.querySelectorAll('section .cajaGaleria .cajaItems .item .cajaImagen img');
+    var imagenesDestacadas = document.querySelectorAll('featured__img');
     var imagenesDeInteres = document.querySelectorAll('section .cajaExtra .cajaItems .item .cajaImagen img');
     var botonDerecho = document.getElementById('botonDerecho');
     var botonIzquierdo = document.getElementById('botonIzquierda'); 

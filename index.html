@@ -11,40 +11,40 @@
     <script type="text/javascript" src="public/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="contenedor">
-        <h1 class="fas fa-plane-departure">Travel Blog</h1>
-        <input type="checkbox" id="checkMenu" />
-        <label class="fas fa-bars" for="checkMenu"></label>
-        <nav class="menu">
-          <a href="#inicioPortada">Inicio</a>
-          <a href="#destacados">Destacados</a>
-          <a href="#experiencias">Experiencias</a>
-          <a href="contacto.html">Contacto</a>
+    <header class="header">
+      <div class="header__box">
+        <h1 class="header__title fas fa-plane-departure">Travel Blog</h1>
+        <input class="header__input" type="checkbox" id="checkMenu" />
+        <label class="header__label fas fa-bars" for="checkMenu"></label>
+        <nav class="header__menu">
+          <a class="header__link" href="#home">Inicio</a>
+          <a class="header__link" href="#featured">Destacados</a>
+          <a class="header__link" href="#experiencias">Experiencias</a>
+          <a class="header__link" href="./public/contacto.html">Contacto</a>
           
         </nav>
       </div>
     </header>
 
-    <section id="inicioPortada">
-      <div class="cajaPortada">
-        <img src="public/Imagenes/mapa.jpg" />
-        <div class="descripcion">
-          <h2>Queres viajar a lugares realmente increibles?</h2>
-          <p>Entonces sigueme</p>
-          <a href="#inicio">Leer mas</a>
+    <section class="coverPage" id="coverPage">
+      <div class="coverPage__box">
+        <img class="coverPage__img" src="public/Imagenes/mapa.jpg" />
+        <div class="coverPage__desc-box">
+          <h2 class="coverPage__title">Queres viajar a lugares realmente increibles?</h2>
+          <p class="coverPage__second">Entonces sigueme</p>
+          <a class="coverPage__info" href="#inicio">Leer mas</a>
         </div>
       </div>
     </section>
 
     <div class="separador"></div>
 
-    <section id="inicio">
-      <div class="cajaReflexion">
-        <h3>
+    <section class="presentation" id="home">
+      <div class="presentation__box">
+        <h3 class="presentation__title">
           ¿Alguna vez te preguntaste de donde proviene la palabra "viaje"?
         </h3>
-        <p>
+        <p class="presentation__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -65,38 +65,40 @@
 
     <div class="separador"></div>
 
-    <section id="destacados">
-      <div class="cajaGaleria">
-        <h4>Lugares mas recomendados</h4>
-        <div class="cajaItems">
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/murallaChina.jpg" />
-              <p class="continente">Asia</p>
+    <section id="featured">
+      <div class="featured__box">
+        <h4 class="presentation__title presentation__title--featured">Lugares mas recomendados</h4>
+
+        <div class="featured__items">
+
+          <div class="featured__item">
+            <div class="featured__img-box ">
+              <img class="featured__img" src="public/Imagenes/murallaChina.jpg" />
+              <p class="featured__continent continente">Asia</p>
             </div>
-            <p>
+            <p class="featured__description">
               Muralla China-Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
           </div>
 
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/coliseoRomano.jpg" />
-              <p class="continente">Europa</p>
+          <div class="featured__item">
+            <div class="featured__img-box ">
+              <img class="featured__img" src="public/Imagenes/coliseoRomano.jpg" />
+              <p class="featured__continent">Europa</p>
             </div>
-            <p>
+            <p class="featured__description">
               Coliseo Romano-Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
           </div>
 
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/machuPichu.jpg" />
-              <p class="continente">America</p>
+          <div class="featured__item ">
+            <div class="featured__img-box">
+              <img class="featured__img" src="public/Imagenes/machuPichu.jpg" />
+              <p class="featured__continent">America</p>
             </div>
-            <p>
+            <p class="featured__description">
               Machu Pichu-Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
@@ -109,7 +111,7 @@
 
     <section>
       <h4>Galeria</h4>
-      <div class="cajaSlider">
+      <div class="galery cajaSlider">
         <ul>
           <li>
             <div class="cajaImagen">
@@ -160,104 +162,104 @@
     </section>
     <div class="separador"></div>
 
-    <section id="experiencias">
-      <div class="cajaPersonas">
-        <h4>Experiencias</h4>
-        <div class="cajaExperiencias">
-          <div class="item">
-            <p>
+    <section class="experiences" id="experiences">
+        <h4 class="featured__title">Experiencias</h4>
+        <div class="experiences__box ">
+          <div class="experiences__item">
+            <p class="presentation__description presentation__description--experiences-desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="cajaImagen">
-              <img src="public/Imagenes/persona1.jpg" />
+            <div class="experiences__img-box">
+              <img class="experiences__img" src="public/Imagenes/persona1.jpg" />
             </div>
           </div>
 
-          <div class="item">
-            <p>
+          <div class="experiences__item">
+            <p class="presentation__description presentation__description--experiences-desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="cajaImagen">
-              <img src="public/Imagenes/persona2.jpg" />
+            <div class="experiences__img-box">
+              <img class="experiences__img" src="public/Imagenes/persona2.jpg" />
             </div>
           </div>
-        </div>
+
       </div>
     </section>
 
     <div class="separador"></div>
 
-    <section>
-      <div class="cajaExtra">
-        <h4>Lugares de interes general</h4>
-        <div class="cajaItems">
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/phuket.jpg" />
+
+    <section class="placesBox">
+      
+        <h4 class="presentation__title presentation__title--placesBox">Lugares de interes general</h4>
+        <div class="featured__items featured__items--places-box">
+          <div class="placesBox__item">
+            <div class="placesBox__img-box">
+              <img class="placesBox__img" src="public/Imagenes/phuket.jpg" />
             </div>
-            <p>
+            <p class="featured__description featured__description--places-box">
               Puhket-Tailandia-Lorem ipsum dolor sit amet, consectetur
               adipisicing elit.
             </p>
           </div>
 
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/rioDeJaneiro.jpg" />
+          <div class="placesBox__item">
+            <div class="placesBox__img-box">
+              <img class="placesBox__img" src="public/Imagenes/rioDeJaneiro.jpg" />
             </div>
-            <p>
+            <p class="featured__description">
               Rio De Janeiro-Brasil-Lorem ipsum dolor sit amet, consectetur
               adipisicing elit.
             </p>
           </div>
 
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/islasGalapago.jpg" />
+          <div class="placesBox__item">
+            <div class="placesBox__img-box">
+              <img class="placesBox__img" src="public/Imagenes/islasGalapago.jpg" />
             </div>
-            <p>
+            <p class="featured__description">
               Islas Galapago-Ecuador-Lorem ipsum dolor sit amet, consectetur
               adipisicing elit.
             </p>
           </div>
 
-          <div class="item">
-            <div class="cajaImagen">
-              <img src="public/Imagenes/glaciarPeritoMoreno.jpg" />
+          <div class="placesBox__item ">
+            <div class="placesBox__img-box">
+              <img class="placesBox__img" src="public/Imagenes/glaciarPeritoMoreno.jpg" />
             </div>
-            <p>
+            <p class="featured__description">
               Glaciar Perito Moreno-Argentina-Lorem ipsum dolor sit amet,
               consectetur adipisicing elit.
             </p>
           </div>
         </div>
-      </div>
+      
     </section>
 
     <div class="separador"></div>
 
-    <footer>
-      <div class="cajaInfo">
-        <p>Trevel Blog &copy</p>
-        <div class="cajaIconos">
-          <a class="fab fa-twitter-square" href="#"></a>
-          <a class="fab fa-facebook-square" href="#"></a>
-          <a class="fab fa-instagram-square" href="#"></a>
+    <footer class="footer">
+      <div class="footer__info-box">
+        <p class="footer_title">Trevel Blog &copy</p>
+        <div class="footer_icons">
+          <a class="footer_link fab fa-twitter-square" href="#"></a>
+          <a class="footer_link fab fa-facebook-square" href="#"></a>
+          <a class="footer_link fab fa-instagram-square" href="#"></a>
         </div>
       </div>
     </footer>
 
     <section>
-      <div class="cajaImagenUnica">
-        <div class="imagenUnica">
-          <img id="imagen" src="" />
-          <div id="botonCerrado" class="far fa-times-circle"></div>
+      <div class="boxImg">
+        <div class="boxImg__ref ">
+          <img class="boxImg__image" id="imagen" src="" />
+          <div id="botonCerrado" class="boxImg__close-b far fa-times-circle"></div>
         </div>
       </div>
     </section>

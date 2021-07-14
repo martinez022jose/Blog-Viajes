@@ -14,9 +14,10 @@ body{
 .separador{
 	height: 60px;
 }
+
 /*Trabajamos sobre el header*/
 
-header{
+.header{
 	width: 100%;
 	height: 60px;
 	background: #333;
@@ -28,28 +29,28 @@ header{
 
 }
 
-header .contenedor{
+.header__box{
 	width: auto;
 	margin: auto;
 }
 
-header .contenedor h1{
+.header__title {
 	float: left;
 	padding: 10px;
 }
 
-header .contenedor input{
+.header__input{
 	display: none;
 }
 
-header .contenedor label{
+.header__label{
 	float: right;
 	font-size: 30px;
 	padding: 20px;
 	cursor: pointer;
 }
 
-header .contenedor .menu{
+.header__menu{
 	position: absolute;
 	top:60px;
 	left: 0px;
@@ -60,7 +61,7 @@ header .contenedor .menu{
 	z-index: 110;
 }
 
-header .contenedor .menu a{
+.header__link{
 	display: block;
 	color:#fff;
 	height: 60px;
@@ -70,32 +71,29 @@ header .contenedor .menu a{
 	z-index: 101;
 }
 
-header .contenedor .menu a:hover{
+.header__link:hover{
     background: rgba(0,0,0,0.8);
 }
 
-header .contenedor input:checked ~ .menu{
+.header__input:checked ~ .header__menu{
 	transform: translateX(0%);
 }
 
 /*Trabajamos sobre la portada*/
-section{
-	width:100%;
-	margin: auto;
-}
 
-section .cajaPortada{
+
+.coverPage__box{
 	position: relative;
     
 }
 
-section .cajaPortada img{
+.coverPage__img{
 	width: 100%;
 	height: 48rem;
 
 }
 
-section .cajaPortada .descripcion{
+.coverPage__desc-box{
 	position: absolute;
     padding: 20px;
 	top:0px;
@@ -109,18 +107,18 @@ section .cajaPortada .descripcion{
 	
 }
 
-section .cajaPortada .descripcion h2{
+.coverPage__title{
 	font-size: 40px;
 	color:black;
 	margin-top: 20px;
 }
-section .cajaPortada .descripcion p{
+.coverPage__second{
 	font-size: 30px;
 	color:rgba(0,0,0,0.7);
 	margin-bottom: 10px;
 }
 
-section .cajaPortada .descripcion a{
+.coverPage__info{
 	text-decoration: none;
 	font-size: 20px;
 	color:rgba(0,0,0,0.7);
@@ -136,7 +134,7 @@ section .cajaPortada .descripcion a{
 
 }
 
-section .cajaPortada .descripcion a:hover{
+.coverPage__info:hover{
 	background:rgba(0,0,0,0.6);
 	
  }
@@ -144,17 +142,13 @@ section .cajaPortada .descripcion a:hover{
 /*Trabajamos sobre la section de "Introduccion"*/
 
 
-section .cajaReflexion{
-	flex-direction: column;
-}
-
-section .cajaReflexion h3{
-	margin-bottom: 20px;
+.presentation__title{
+	margin-bottom: 10px;
 	text-align: center;
 	font-size: 40px;
 }
 
-section .cajaReflexion p{
+.presentation__description{
 	font-size: 30px;
 	padding: 60px;
 	color:grey;
@@ -162,26 +156,19 @@ section .cajaReflexion p{
 
 /*Trabajamos sobre la seccion "Mas recomendados" */
 
-section .cajaGaleria{
-	text-align: center;
-
-}
-
-section .cajaGaleria h4{
-	font-size: 40px;
+.presentation__title--featured{
 	margin-bottom: 40px;
 }
-section .cajaGaleria .cajaItems{
+
+.featured__items{
 	display: flex;
 	flex-wrap: wrap;
 	width:70%;
 	margin: auto;
-	justify-content: center;
-	align-items: center;
 
 }
 
-section .cajaGaleria .cajaItems .item{
+.featured__item{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -191,7 +178,7 @@ section .cajaGaleria .cajaItems .item{
 	padding: 30px;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen .continente{
+.featured__continent{
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -210,17 +197,18 @@ section .cajaGaleria .cajaItems .item .cajaImagen .continente{
 	display: none;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen:hover .continente{
+.featured__img-box:hover .featured__continent{
     transform: translateY(100%);
     display: none;
 }
 
-section .cajaGaleria .cajaItems .item p{
+.featured__description{
 	font-size: 25px;
 	height: 200px;
+	margin-top: 20px;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen{
+.featured__img-box{
 	display: flex;
 	width: 300px;
 	height: 200px;
@@ -228,7 +216,7 @@ section .cajaGaleria .cajaItems .item .cajaImagen{
 	z-index: 101;
 }
 
-section .cajaGaleria .cajaItems .item .cajaImagen img{
+.featured__img{
 	width: 100%;
 	height: 100%;
 }
@@ -295,28 +283,24 @@ section .cajaSlider{
 
 /*Trabajamos sobre la seccion de "Lugares relacionados"*/
 
-section .cajaExtra{
+.placesBox{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	background: black;
-	color: #fff;
-}
+	color: #fff;}
 
-section .cajaExtra h4{
-	font-size: 30px;
-	margin-top: 30px;
+.presentation__title--placesBox{
+	color: white;
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
-section .cajaExtra .cajaItems{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+.featured__items--places-box{
+	width: 100%;
 }
 
-section .cajaExtra .cajaItems .item{
+.placesBox__item{
 	width: 25%;
 	flex-direction: column;
 	display: flex;
@@ -326,16 +310,16 @@ section .cajaExtra .cajaItems .item{
 	z-index: 101;
 }
 
-section .cajaExtra .cajaItems .item p{
+.featured__description--places-box{
 	font-size: 25px;
 	height: 200px;
 }
-section .cajaExtra .cajaItems .item .cajaImagen{
+.placesBox__img-box{
 	width: 300px;
 	height: 200px;
 }
 
-section .cajaExtra .cajaItems .item .cajaImagen img{
+.placesBox__img{
 	width: 100%;
 	height: 100%;
 	border-radius: 50px;
@@ -344,75 +328,63 @@ section .cajaExtra .cajaItems .item .cajaImagen img{
 
 /*Trabajamos sobre la seccion "experiencias"*/
 
-section .cajaPersonas{
+.experiences__box{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: center;
 }
 
-section .cajaPersonas h4{
-	font-size: 40px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-section .cajaPersonas .cajaExperiencias{
+.experiences__box{
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 }
 
-section .cajaPersonas .cajaExperiencias .item{
+.experiences__item{
 	display: flex;
 
 }
-section .cajaPersonas .cajaExperiencias .item .cajaImagen{
+
+.experiences__img-box{
 	display: flex;
-	width: 200px;
-	height: 15rem;
+	width: 300px;
+	height: 20rem;
 	padding:10px;
+	margin-left: 100px;
 }
 
-section .cajaPersonas .cajaExperiencias .item p{
+.presentation__description--experiences-desc{
 	width: 60%;
-	padding: 30px;
-	font-size: 30px;
-	color: grey;
 }
-section .cajaPersonas .cajaExperiencias .item img{
+
+.experiences__img{
     width: 100%;
     border-radius: 50%;
 }
 
 /*Trabajamos sobre el foooter*/
 
-footer{
-	width: 100%;
-}
 
-footer .cajaInfo{
+.footer__info-box{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 }
 
-footer .cajaInfo p{
+.footer_title{
 	font-size: 30px;
 	margin-bottom: 10px;
 }
 
-footer .cajaInfo .cajaIconos{
+.footer_icons{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-footer .cajaInfo .cajaIconos a{
+.footer_link{
     font-size: 50px;
 	text-decoration: none;
 	background:white;
@@ -460,7 +432,7 @@ section .imagenUnicaActivada{
 
 /*Trabajamos sobre el "responsive design*/
 @media(min-width:1280px){
-    header .contenedor .menu{
+    .header__menu{
 		position: absolute;
 		transform: translateX(0%);
 		display: flex;
@@ -471,10 +443,10 @@ section .imagenUnicaActivada{
 
 	}
 
-	 header .contenedor .menu a{
+	.header__link{
     	border: none;
     }
-	header .contenedor label{
+	.header__label{
 		display: none;
 	}
 
@@ -491,7 +463,7 @@ section .imagenUnicaActivada{
 
 }
 @media(min-width:1024px) and (max-width:1280px){
-	header .contenedor .menu{
+	.header__menu{
 		position: absolute;
 		transform: translateX(0%);
 		display: flex;
@@ -501,202 +473,140 @@ section .imagenUnicaActivada{
 		background: none;
 
 	}
-
-    header .contenedor .menu a{
+	.header__link{
     	border: none;
     }
 
-	header .contenedor label{
+	.header__label{
 		display: none;
 	}
 
-	section .cajaExtra .cajaItems{
-		display:flex;
-	}
-
-	section .cajaExtra .cajaItems .item{
-		width: 50%
-	}
-    
-    section .cajaGaleria .cajaItems .item{
-        width: 50%;
-	}
-
-	section .cajaGaleria .cajaItems .item p{
-		font-size: 25px;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-	section .cajaExtra .cajaItems .item{
-        width: 50%;
-	}
-
-	section .cajaExtra .cajaItems .item p{
-		padding-left: 100px;
-		padding-right: 100px;
-		font-size: 25px;
-	}
-
-	section .cajaExtra h4{
-		font-size: 40px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item input{
-		width: 300px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item textarea{
-		width: 300px;
-	}
-
-
 }
 @media(min-width:768px) and (max-width: 1024px){
-	section .cajaPortada .descripcion{
-		padding-left:430px;
+	.header__menu{
+		position: absolute;
+		transform: translateX(0%);
+		display: flex;
+		top: 0px;
+		right: 0px;
+		justify-content: center;
+		background: none;
+
 	}
-    section .cajaGaleria .cajaItems .item{
-        width: 50%;
-	}
-    
-    section .cajaExtra .cajaItems{
-    	display: flex;
+	.header__link{
+    	border: none;
     }
-	section .cajaExtra .cajaItems .item{
+	.header__label{
+		display: none;
+	}
+	
+
+
+	.placesBox__item{
 		width: 50%;
 	}
 
-	section .cajaExtra .cajaItems .item p{
-		padding-left: 100px;
-		padding-right: 100px;
-		font-size: 25px;
+	.coverPage__desc-box{
+		padding-left:430px;
+	}
+	.featured__items{
+		width: 100%;
+		margin:auto;
 	}
 
-	section .cajaGaleria .cajaItems .item p{
-		font-size: 25px;
-		padding-left: 50px;
-		padding-right: 50px;
+	.featured__item{
+		width: 40%;
+		margin: 5%;
 	}
 
-	section .cajaContacto .form .cajaFormulario form .item textarea{
-		width: 300px;
-	}
 }
 
 @media(min-width:480px) and (max-width:768px){
-	
-	section .cajaPortada .descripcion{
-		padding-left:320px;
+	.featured__item{
+		width: 100%;
+		
+	}
+
+	.placesBox__item{
+		width: 100%;
+	}
+
+	.experiences__item{
+		display:block;
+		width: 100%;
+	}
+
+	.coverPage__desc-box{
+		padding-left:350px;
 
 	}
     
-    section .cajaPortada .descripcion h2{
+    .coverPage__title{
+		font-size: 20px;
+
+	}
+
+	.coverPage__second{
 		font-size: 18px;
-
 	}
 
-	section .cajaPortada .descripcion p{
-		font-size: 15px;
-	}
-
-	section .cajaPortada .descripcion a{
+	.coverPage__info{
 		font-size: 13px;
 		width: 100px;
 		height: 20px;
 	}
 
-	section .cajaGaleria .cajaItems .item{
-        width: 70%;
-        margin:auto;
-     
-	}
-    
-    section .cajaGaleria .cajaItems{
-		display:flex;
-		margin:auto;
-		
-		
-	}
-	section .cajaExtra .cajaItems .item{
-		display:flex;
-		width: 70%;
-    }
-
-	section .cajaExtra .cajaItems .item p{
-		padding-left: 100px;
-		padding-right: 100px;
-		font-size: 25px;
+	.coverPage__img{
+		height: 30rem;
 	}
 
-	section .cajaGaleria .cajaItems .item p{
-		font-size: 25px;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item input{
-		width: 200px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item textarea{
-		width: 200px;
-	}
 
 		
 }
 @media(max-width:480px){
-	section .cajaPortada .descripcion{
+
+	.coverPage__desc-box{
 		padding-left:215px;
 	}
 
-	section .cajaPortada .descripcion h2{
+	.coverPage__title{
 		font-size: 15px;
 	}
 
-	section .cajaPortada .descripcion p{
+	.coverPage__second{
 		font-size: 12px;
 	}
 
-	section .cajaPortada .descripcion a{
+	.coverPage__info{
 		font-size: 8px;
 		width: 60px;
 		height: 30px;
 		text-align: center;
 	}
 
-    section .cajaGaleria .cajaItems .item{
-        width: 70%;
-        margin:auto;
-	}
-    
-    section .cajaGaleria .cajaItems{
-		display:flex;
-		margin:auto;
+	.coverPage__img{
+		height: 25rem;
 	}
 
-	section .cajaExtra .cajaItems .item{
-		display:flex;
-		width: 70%;
-    }
-
-	section .cajaExtra .cajaItems .item p{
-		padding-left: 100px;
-		padding-right: 100px;
-		font-size: 25px;
+	.placesBox__item{
+		width: 100%;
 	}
 
-	section .cajaGaleria .cajaItems .item p{
-		font-size: 25px;
-		padding-left: 50px;
-		padding-right: 50px;
+	.placesBox__img{
+		
 	}
 
-	section .cajaPersonas .cajaExperiencias .item{
+	.featured__item{
+		width: 100%;
+		
+	}
+
+	.experiences__item{
 		display:block;
 		width: 100%;
 	}
 
-	section .cajaPersonas .cajaExperiencias{
+	.experiences__box{
 		margin:auto;
 		display: flex;
 		justify-content: center;
@@ -704,68 +614,33 @@ section .imagenUnicaActivada{
 		text-align: center;
     }
 
-	footer .cajaInfo .cajaIconos{
-		display: flex;
-		flex-direction: column;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item input{
-		width: 100px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item textarea{
-		width: 100px;
-	}
-
    
 
 }
 @media(max-width:340px){
-	section .cajaPortada .descripcion{
-		padding-left:150px;
+
+	.footer_link{
+		width: 100%;
 	}
 
-	section .cajaPortada .descripcion h2{
-		font-size: 12px;
+	.featured__item{
+		width: 100%;
+		
 	}
 
-	section .cajaPortada .descripcion p{
-		font-size: 10px;
-	}
-
-	section .cajaPortada .descripcion a{
-		font-size: 5px;
-		width: 50px;
-		height: 20px;
-		text-align: center;
-	}
-
-	header .contenedor h1{
-		font-size: 25px;
-	}
-
-	footer .cajaInfo .cajaIconos{
-		display: flex;
-		flex-direction: column;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item input{
-		width: 100px;
-	}
-
-	section .cajaContacto .form .cajaFormulario form .item textarea{
-		width: 100px;
+	.placesBox__item{
+		width: 100%;
 	}
 
 }
 
 /*Trabajamos sobre el contacto.html*/
-section .cajaContacto{
+.formContact__box{
 	width: 100%;
     padding: 60px;
 	display: flex;
 }
-section .cajaContacto .cajaLogo{
+.formContact__logo{
 	width: 50%;
 	height: 650px;
 	display: flex;
@@ -775,29 +650,30 @@ section .cajaContacto .cajaLogo{
 	flex-direction: column;
 	border-radius: 50px 0px 0px 50px;
 }
-section .cajaContacto .cajaLogo #logoContacto{
+.formContact__image{
 	font-size: 100px;
 	margin-top: 10px;
 	color:white;
 
 }
 
-section .cajaContacto .cajaLogo .descripcion{
+.formContact__description-box{
 	padding: 20px;
 }
-section .cajaContacto .cajaLogo .descripcion h1{
+
+.formContact__title{
 	font-size: 25px;
 	text-align: center;
 	color:#fff;
 	margin-bottom: 10px;
 }
 
-section .cajaContacto .cajaLogo .descripcion h2{
+.formContact__description{
 	font-size: 20px;
 	color:#fff;
 }
 
-section .cajaContacto .form{
+.formContact__comp{
 	width: 40%;
 	flex-direction: column;
 	border-top:1px solid black; 
@@ -807,7 +683,7 @@ section .cajaContacto .form{
 	padding-top: 30px;
 }
 
-section .cajaContacto .form .cajaFormulario form .item{
+.formContact__item {
  	margin-bottom: 20px;
  	margin-left: 20px;
  	display: flex;
@@ -815,17 +691,17 @@ section .cajaContacto .form .cajaFormulario form .item{
  	width: 500px;
  }
 
- section .cajaContacto .form .cajaFormulario form .item label{
+.formContact__label{
     font-size: 20px;
     margin-bottom: 5px;
  }
 
- section .cajaContacto .form .cajaFormulario form .item input{
+.formContact__input{
     font-size: 17px;
     height: 30px;
  }
 
- section .cajaContacto .form .cajaFormulario form .item #buttonEnviar{
+ .formContact__send-b{
 	width: 100px;
 	font-size: 20px;
 	height: 50px;
@@ -835,7 +711,7 @@ section .cajaContacto .form .cajaFormulario form .item{
 	border-radius: 20px;
 }
 
- section .cajaContacto .form .cajaFormulario form .item textarea{
+.formContact__textarea{
  	min-width: 500px;
  	max-width: 500px;
  	min-height: 80px;
